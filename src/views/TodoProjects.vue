@@ -42,9 +42,6 @@
   
 <script>
 
-// import db from '@/firebase'
-// import { collection, query, onSnapshot } from "firebase/firestore";
-
 export default {
   methods: {
     doneTodo(content,person){
@@ -61,20 +58,6 @@ export default {
       return this.$store.state.projects;
     },
     
-  },
-  created() {
-    // Firebase/Firestore
-    // const q = query(collection(db, "projects"));
-    // onSnapshot(q, (snapshot) => {
-    //   snapshot.docChanges().forEach((change) => {
-    //     if (change.type === "added") {
-    //       this.projects.push({
-    //         ...change.doc.data(),
-    //         id: change.doc.id
-    //       })
-    //     }
-    //   });
-    // });
   }
 }
 </script>

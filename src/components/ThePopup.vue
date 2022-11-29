@@ -45,8 +45,6 @@
 <script>
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
-// import db from '@/firebase'
-// import { collection, addDoc } from "firebase/firestore"; 
 
 export default {
     data() {
@@ -83,27 +81,6 @@ export default {
                 this.$emit('projectAdded');
                 this.$refs.form.reset();
             }
-
-
-
-            //Firebase
-            // if(this.$refs.form.validate()){
-            //     this.loading = true;
-            //     const data = {
-            //         title: this.project.title,
-            //         content: this.project.content,
-            //         due: format(parseISO(this.project.due), 'do MMM yyyy'),
-            //         person: 'Black Adam',
-            //         status: 'ongoing',
-            //     }
-
-            //     addDoc(collection(db, "projects"), data).then(() => {
-            //             this.loading = false;
-            //             this.dialog = false;
-            //             this.$emit('projectAdded')
-            //             this.$refs.form.reset();
-            //         });
-            // }
             
         }
     },

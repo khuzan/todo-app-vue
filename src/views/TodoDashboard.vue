@@ -57,10 +57,6 @@
   
 <script>
 
-
-// import db from '@/firebase'
-// import { collection, query, onSnapshot } from "firebase/firestore";
-
 export default {
   methods: {
     sortBy(data) {
@@ -71,20 +67,6 @@ export default {
     projects(){
       return this.$store.state.projects;
     }
-  },
-  created() {
-    //Firebase
-    // const q = query(collection(db, "projects"));
-    // onSnapshot(q, (snapshot) => {
-    //   snapshot.docChanges().forEach((change) => {
-    //     if (change.type === "added") {
-    //       this.projects.push({
-    //         ...change.doc.data(),
-    //         id: change.doc.id
-    //       })
-    //     }
-    //   });
-    // });
   }
 }
 </script>

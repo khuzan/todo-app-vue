@@ -1,11 +1,6 @@
 <template>
     <nav>
 
-        <!-- <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
-            snackbarText
-            <v-btn text color="primary" @click.native="snackbar = false">Close</v-btn>
-        </v-snackbar> -->
-
         <v-snackbar v-model="snackbar" top color="teal accent-3">
             <span>Awesome! You added a new project.</span>
 
@@ -76,13 +71,6 @@
                         </v-list-item-icon>
                         <v-list-item-title>{{ link.text }}</v-list-item-title>
                     </v-list-item>
-
-                    <!-- <v-list-item>
-                        <v-list-item-icon>
-                            <v-icon>mdi-account</v-icon>
-                        </v-list-item-icon>
-                        <v-list-item-title>Account</v-list-item-title>
-                    </v-list-item> -->
                 </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
